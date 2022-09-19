@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorReportId" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="500.0" stroke="BLACK" strokeType="INSIDE" style="-fx-smooth: 20;" width="700.0">
+         <fill>
+            <LinearGradient endX="0.8888888404482886" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#437184" offset="0.007662835249042145" />
+                  <Stop color="#0090a6" offset="0.5125541467525114" />
+                  <Stop color="#b4c3c9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="117.0" layoutY="169.0" prefHeight="90.0" prefWidth="537.0" text="System Report">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="12.0" prefHeight="39.0" prefWidth="270.0" text="I.H Super Market">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Label>
+      <Separator layoutX="295.0" layoutY="30.0" prefHeight="8.0" prefWidth="383.0" style="-fx-background-color: black;" />
+      <JFXButton buttonType="RAISED" layoutX="531.0" layoutY="451.0" onAction="#btnBackSelectReportOnAction" prefHeight="28.0" prefWidth="147.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 5;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

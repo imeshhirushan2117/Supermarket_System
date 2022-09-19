@@ -1,0 +1,27 @@
+
+.txtItem{
+    -fx-text-fill:white;
+}
+.btnLogOut{
+    -fx-background-color:#1B9CFC;
+    -fx-text-fill:black;
+    -fx-background-radius:5;
+}
+.txtDescription{
+    -fx-text-fill:white;
+}
+.txtPacket{
+    -fx-text-fill:white;
+}
+.txtUnit{
+    -fx-text-fill:white;
+}
+.txtQty{
+    -fx-text-fill:white;
+}
+.txtName{
+    -fx-text-fill:white;
+}
+.txtPassword{
+    -fx-text-fill:white;
+}

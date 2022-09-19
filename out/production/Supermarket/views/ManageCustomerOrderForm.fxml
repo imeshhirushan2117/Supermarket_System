@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorManageId" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageCustomerOrderFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#186170" offset="0.010217113665389532" />
+                  <Stop color="#0099a3" offset="0.5207436373451302" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="12.0" layoutY="15.0" prefHeight="39.0" prefWidth="270.0" text="I.H Super Market">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Label>
+      <Separator layoutX="297.0" layoutY="34.0" prefHeight="7.0" prefWidth="565.0" style="-fx-background-color: black;" />
+      <JFXButton buttonType="RAISED" layoutX="399.0" layoutY="76.0" prefHeight="29.0" prefWidth="93.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 5;" text="Scarch">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="724.0" layoutY="76.0" prefHeight="28.0" prefWidth="74.0" text="Cid">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblGetDetails" layoutX="132.0" layoutY="135.0" prefHeight="197.0" prefWidth="726.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="129.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="135.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="173.3333740234375" text="Qty" />
+            <TableColumn fx:id="colDiscount" prefWidth="132.6666259765625" text="Discount" />
+            <TableColumn fx:id="colNetTotal" prefWidth="173.3333740234375" text="Net Total" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtQty" focusColor="BLACK" labelFloat="true" layoutX="386.0" layoutY="378.0" prefHeight="25.0" prefWidth="181.0" promptText="Description" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtItemCode" focusColor="BLACK" labelFloat="true" layoutX="149.0" layoutY="378.0" prefHeight="25.0" prefWidth="181.0" promptText="Item Code" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDescription" focusColor="BLACK" labelFloat="true" layoutX="624.0" layoutY="378.0" prefHeight="25.0" prefWidth="181.0" promptText="Qty" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtNetTotal" focusColor="BLACK" labelFloat="true" layoutX="385.0" layoutY="429.0" prefHeight="25.0" prefWidth="181.0" promptText="Net Total" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDiscount" focusColor="BLACK" labelFloat="true" layoutX="147.0" layoutY="429.0" prefHeight="25.0" prefWidth="181.0" promptText="Discount" unFocusColor="BLACK" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="141.0" layoutY="78.0" prefHeight="25.0" prefWidth="240.0" promptText="Seacher Order" unFocusColor="BLACK" />
+      <JFXButton fx:id="btnCancelId" buttonType="RAISED" layoutX="462.0" layoutY="547.0" onAction="#btnCancelOnAction" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: #c0392b; -fx-background-radius: 5;" text="Cancle">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="674.0" layoutY="547.0" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 5;" text="Conform Edit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbOrderId" focusColor="BLACK" layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+   </children>
+</AnchorPane>
